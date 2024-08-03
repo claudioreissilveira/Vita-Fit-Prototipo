@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #131313;
+  --background-nav-color: white;
+  --background-cards-color: white;
+  --background-container-footer: #2a2a2a;
+  --links-header-color: white;
+  --color-text: white;
+  --fontsize-h1: 4rem;
+  --fontsize-subtext: 1.3rem;
+  --color-subtext: rgb(230, 230, 230);
+  --special-color: #0bfa80;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 10%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--links-header-color);
+}
+
+.div_btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+
+.link_atual {
+  color: var(--special-color);
+}
+
+.link_atual::before {
+  content: "";
+  position: absolute;
+  background-color: var(--special-color);
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.div_btns ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link2::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.link3::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.link4::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.link5::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.link6::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.link7::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0%;
+  height: 0.2vh;
+  margin-top: 1.5%;
+  transition: 0.3s;
+}
+
+.link_atual:hover::before {
+  width: 2.4%;
+}
+
+.link2:hover::before {
+  width: 2.9%;
+}
+
+.link3:hover::before {
+  width: 2.6%;
+}
+
+.link4:hover::before {
+  width: 3.1%;
+}
+
+.link5:hover::before {
+  width: 4%;
+}
+
+.link6:hover::before {
+  width: 3.3%;
+}
+
+.link7:hover::before {
+  width: 1.8%;
+}
+
+.btn_comecar {
+  background-image: linear-gradient(
+    to right top,
+    #108552,
+    #06a15f,
+    #00be6b,
+    #00dc76,
+    #0bfa80
+  );
+  width: 20%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.btn_comecar:hover {
+  background-image: linear-gradient(
+    to right top,
+    #027681,
+    #009797,
+    #00b9a0,
+    #00da9b,
+    #0bfa87
+  );
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMissoes {
+  width: 55%;
+  height: 30vh;
+  border-radius: 15px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ulMissoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(14, 14, 14);
+  margin: 0;
+  border-radius: 15px 15px 0 0;
+  padding: 0;
+}
+
+.ulMissoes div {
+  width: 80%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ulMissoes li {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.divInfosMissoes1 {
+  width: 80%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divInfosMissoes1 h1 {
+  color: white;
+  font-size: 1rem;
+}
+
+.divInfosMissoes1 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+}
+
+.divInfosMissoes1 nav div {
+  border: groove 0.2vh white;
+  width: 50%;
+  height: 2vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.divInfosMissoes1 nav div::before {
+  content: "";
+  height: 2vh;
+  width: 80%;
+  background-color: var(--special-color);
+}
+
+.divInfosMissoes1 nav span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.divInfosMissoes2 {
+  width: 80%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divInfosMissoes2 h1 {
+  color: white;
+  font-size: 1rem;
+}
+
+.divInfosMissoes2 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+}
+
+.divInfosMissoes2 nav div {
+  border: groove 0.2vh white;
+  width: 50%;
+  height: 2vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.divInfosMissoes2 nav div::before {
+  content: "";
+  height: 2vh;
+  width: 50%;
+  background-color: var(--special-color);
+}
+
+.divInfosMissoes2 nav span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.divInfosMissoes3 {
+  width: 80%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divInfosMissoes3 h1 {
+  color: white;
+  font-size: 1rem;
+}
+
+.divInfosMissoes3 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+}
+
+.divInfosMissoes3 nav div {
+  border: groove 0.2vh white;
+  width: 50%;
+  height: 2vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.divInfosMissoes3 nav span {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
